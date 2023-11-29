@@ -1,0 +1,15 @@
+app:
+  name: angelsfairy-poi-map-app
+  namespace: angelsfairy
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/angelsfairy-frontend
+  org: rhdh23-demo
+  name: angelsfairy-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: angelsfairy/poi-map-app
+  tag: latest
